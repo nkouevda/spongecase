@@ -7,7 +7,7 @@ Convert text to Spongebob case.
     pip install spongecase
 
 Or:
-        
+
     brew install nkouevda/nkouevda/spongecase
 
 ## Examples
