@@ -6,6 +6,10 @@ Convert text to Spongebob case.
 
     pip install spongecase
 
+Or:
+        
+    brew install nkouevda/nkouevda/spongecase
+
 ## Examples
 
     $ echo the quick brown fox jumps over the lazy dog | spongecase
