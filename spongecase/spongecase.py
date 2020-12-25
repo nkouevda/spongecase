@@ -20,8 +20,12 @@ def spongify_generator(string, p_flip):
 
 
 def main():
-  for line in sys.stdin:
-    print(spongify(line.rstrip()))
+  try:
+    for line in sys.stdin:
+      print(spongify(line.rstrip()))
+  except KeyboardInterrupt:
+    # ^C: exit quietly (but still 1, not 0) instead of printing stack trace
+    sys.exit(1)
 
 
 if __name__ == '__main__':
