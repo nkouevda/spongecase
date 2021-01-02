@@ -21,7 +21,7 @@ setup(
     packages=['spongecase'],
     entry_points={
         'console_scripts': [
-            'spongecase=spongecase.spongecase:main',
+            'spongecase=spongecase.__main__:main',
         ],
     },
 )

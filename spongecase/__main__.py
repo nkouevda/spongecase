@@ -23,10 +23,12 @@ def main():
   try:
     for line in sys.stdin:
       print(spongify(line.rstrip()))
+
+    return 0
   except KeyboardInterrupt:
     # ^C: exit quietly (but still 1, not 0) instead of printing stack trace
-    sys.exit(1)
+    return 1
 
 
 if __name__ == '__main__':
-  main()
+  sys.exit(main())
